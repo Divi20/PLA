@@ -1,0 +1,50 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<section class="custom-social-proof">
+   <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://tidings.today/wp-content/uploads/2018/08/tidings-today-logo-fav.png">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            ABC<br>Purchased <b>4</b> ABC  
+            <small>1 hour ago</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div>
+</section>
+<section class="custom-social-proof">2</section>
+<section class="custom-social-proof">3</section>
+<section class="custom-social-proof">4</section>
+<section class="custom-social-proof">5</section>
+<script>
+    var len = $(".custom-social-proof").length;
+var random = 0;
+
+setInterval(function(){ 
+  random = Math.floor( Math.random() * len ) ;
+  $(".custom-social-proof").hide('slow');
+  $(".custom-social-proof").eq(random).stop().slideToggle('slow'); 
+}, 2000);
+
+// var len = document.getElementsByClassName("custom-social-proof").length;
+
+// var random = 0;
+
+// setInterval(()=>{
+//   random = Math.floor(Math.random() * len );
+// document.querySelectorAll('.custom-social-proof')[random].style.visibility = 'hidden'
+// },1000)
+
+</script>
+    </body>
+</html>
